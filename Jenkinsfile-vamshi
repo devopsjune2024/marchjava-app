@@ -4,7 +4,7 @@ pipeline {
         PATH="/opt/maven3.9/bin/:$PATH"
     }
     stages {
-        stage('GitClone-Checkout') {
+        stage('GitClone-Checkou') {
             steps {
                 git branch: 'main', url: 'https://github.com/devopsjune2024/june25maven.git'
             }
