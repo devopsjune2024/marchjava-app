@@ -7,17 +7,17 @@ pipeline {
     //     maven 'maven3.8'
     // }
     stages {
-        stage('Git-CLonce/Checkout') {
+        stage('ABHI-Git-CLonce/Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/devopsjune2024/marchjava-app.git'
             }
         }
-        stage('Maven-Package') {
+        stage('ABHI-Maven-Package') {
             steps {
                 sh 'mvn package'
             }
         } 
-        stage('Test') {
+        stage('ABHI-Test') {
             steps {
                 sh 'mvn test'
             }
